@@ -1,42 +1,12 @@
 // JSON
 // Mark Alessi
 
-var json = {
-	"friends": {
-		"001435235": {
-			"name": "Chris",
-			"age": 30
-		},
-		"001435238": {
-			"name": "Scott",
-			"age": 42
-		},
-		"001435230": {
-			"name": "Jason",
-			"age": 32
-		}
-	}
-	
+var json = {"sands": [
+		
+		
+			{"number1": "Italian Sub", "Bread": "Italian bread", "Toppings": "mayo, lettuce, tomatoes and black olives"},
+			{"number2": "Reuben Sandwich", "Bread": "Rye, Pumpernickle, or Sourdough", "Toppings": "just mayo"},
+			{"number3": "Cuban Sandwich", "Bread": "Cuban bread (pressed)", "Toppings": "mayo, lettuce and tomatoes"}	
+					]
 };
 
-json.friends["001435230"].name
-
-for (var key in json.friends) {
-	var friend = json.friends[key];
-	
-};
-
-var json2 = {
-	"friends": [
-		{
-			"uuid": "001435235",
-			"name": "Chris",
-			"age": 30
-		},
-		{
-			"uuid": "001435230",
-			"name": "Jason",
-			"age": 32
-		}
-	]
-};
