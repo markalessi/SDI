@@ -4,7 +4,6 @@
 
 
 //var
-
 var name = "Mark";
 var favFood = "Sandwiches!";
 var favTypes = ["Italian Sub" , " Reuben Sandwich" , " Cuban Sandwich" , "Meatball Sub" , "Roast Beef" ];
@@ -46,3 +45,58 @@ var sands = {
 };			
 
 console.log(sands.type);
+
+// function
+// function getClockTime()
+
+function getClockTime()
+{
+   var now    = new Date();
+   var hour   = now.getHours();
+   var minute = now.getMinutes();
+   var second = now.getSeconds();
+   var ap = "AM";
+   if (hour   > 11) { ap = "PM";             }
+   if (hour   > 12) { hour = hour - 12;      }
+   if (hour   == 0) { hour = 12;             }
+   if (hour   < 10) { hour   = "0" + hour;   }
+   if (minute < 10) { minute = "0" + minute; }
+   if (second < 10) { second = "0" + second; }
+   var timeString = hour +
+                    ':' +
+                    minute +
+                    ':' +
+                    second +
+                    " " +
+                    ap;
+   return timeString;
+} 
+
+var clockTime = getClockTime();
+
+if (clockTime < 11)
+  {
+  x = meal[0];
+  }
+else if (clockTime < 11 > 16)
+  {
+  x = meal[1];
+  }
+else
+  {
+  x = meal[2];
+  }
+
+
+console.log("The time is now " + clockTime);
+console.log("It's time to eat " + x + "\n" + "What sandwich will you choose?");
+
+var sand = {
+favTypes: function(i){
+if (i = 0) {
+	console.log("I could eat" + favTypes[0]); 
+} else 		{
+	console.log("I could eat" + favTypes[i++]);
+}
+}
+};
