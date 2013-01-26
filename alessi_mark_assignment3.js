@@ -23,9 +23,26 @@ console.log("My top " + mySand + " favorite types of sandwiches are: " + favType
 //json
 
 
-var json.sands[0]
-	for (var i = 0; i < json.sands.length; i++){
-		var sand = json.sands[i];
-		console.log("Name: " + sand.sands + ", Bread: " + sand.Bread + ", Toppings: " + sand.Toppings); 
-	};
-};
+var sands = {
+	"type": {
+		"number1": {
+			"name": "Italian Sub", 
+			"Bread": "Italian bread", 
+			"Toppings": "mayo, lettuce, tomatoes and black olives"
+			},
+
+		"number2": { 
+			"name": "Reuben Sandwich",
+			"Bread": "Rye, Pumpernickle, or Sourdough", 
+			"Toppings": "just mayo"
+			},
+			
+		"number3": { 
+			"name": "Cuban Sandwich",
+			"Bread": "Cuban bread (pressed)", 
+			"Toppings": "mayo, lettuce and tomatoes"
+			}
+		}
+};			
+
+console.log(sands.type);
