@@ -81,15 +81,11 @@ if (clockTime < 11)
 else if (clockTime < 11 > 16)
   {
   x = meal[1];
-  }
-else
-  {
+  
+  }else{
+
   x = meal[2];
   }
-
-
-console.log("The time is now " + clockTime);
-console.log("It's time to eat " + x + "\n" + "What sandwich will you choose?");
 
 var sand = {
 favTypes: function(i){
@@ -100,3 +96,14 @@ if (i = 0) {
 }
 }
 };
+
+console.log("The time is now " + clockTime);
+console.log("It's time to eat " + x + "\n" + "What sandwich will you choose?");
+console.log("You could eat a " + favTypes[0] + "or " )
+console.log("\n" + "You could eat a " + favTypes[1] + " or " )
+console.log("\n" + "You could eat a " + favTypes[2] + " or " )
+console.log("\n" + "You could eat a " + favTypes[3] + " or " )
+console.log("\n" + "You could eat a " + favTypes[4] + " Sandwich" )
+
+
+
