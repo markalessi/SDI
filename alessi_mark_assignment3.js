@@ -23,10 +23,9 @@ console.log("My top " + mySand + " favorite types of sandwiches are: " + favType
 //json
 
 
-var json = ["sands"]
-console.log(json)
-
-
-
-
-
+var json.sands[0]
+	for (var i = 0; i < json.sands.length; i++){
+		var sand = json.sands[i];
+		console.log("Name: " + sand.sands + ", Bread: " + sand.Bread + ", Toppings: " + sand.Toppings); 
+	};
+};

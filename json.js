@@ -10,3 +10,6 @@ var json = {"sands": [
 					]
 };
 
+for (var key in json.sands) {
+	var sand = json.sands[key];
+}; 
