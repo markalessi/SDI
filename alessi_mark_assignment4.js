@@ -1,5 +1,6 @@
 
-// String and toUpperCase function
+// String and function
+// toUpperCase function used
 // The string given by user --> prompt to enter name 
 // This is a built in JS function which converts the specified string into all CAPITAL letters!! 
 
@@ -30,7 +31,8 @@ var otPay
 var regHours 
 
 
-// in my previous JavaScript class I used 
+// in my previous JavaScript class I used status property a bit
+// to me it's easier when you have several conditions 
 
 
 status = (work < 40) ? regPay = work * rate: regPay = rate * 40   
@@ -41,6 +43,11 @@ status = (work < 40) ? regHours = work : regHours = 40
 var otRate = ot * rate * 1.5 
 var totalPay = regHours * rate + otRate
 
+// pay calc outputs 
+// I always imputed 50 hours at $10 and hour to make sure my functions work properly
+// Then I made sure it worked for > 40 hrs as well 
+
+
 console.log("Regular Pay: " + regHours + " hours @ $", + rate + ".00 per hour = $" + regHours * rate +".00" )
 console.log("You have worked " + ot + " hours of overtime this week." )
 console.log("Your overtime pay rate is $ " + rate * 1.5 + ".00 per hour")
@@ -48,18 +55,53 @@ console.log("Your additional overtime pay is $ " + otRate + ".00 " )
 console.log("Your total Earnings are: $" + totalPay + ".00")
 
 
-var favFood = "Sandwiches!";
-var favTypes = ["Italian Sub" , " Reuben Sandwich" , " Cuban Sandwich" , "Meatball Sub" , "Roast Beef" ];
-var mySand = 3;
-var hungry = true; 
-var meal = [ "breakfast", "lunch", "dinner", "snack" ]
+//string, array, and boolean
 
 
-//output
+var payDay = "Pay Day!";
+var spend = [" Paying Bills" , " Partying Hard" ,  " Investing Wisely" , " Giving it to a spouse" ];
+var broke = true; 
 
-console.log("My name is " + name + " and it is now time for " + meal[1] + "! ");
-console.log("Yes, it is " + hungry + " that I am hungry!" );
-console.log("My favorite food is definately " + favFood );
-console.log("My top " + mySand + " favorite types of sandwiches are: " + favTypes[0] + "," + favTypes[1] + ", and " + favTypes[2]);
+//array outputs
+// var name is global var - same variable name retrieved from first prompt
 
+console.log("Hey " + name + " it's " + payDay);
+console.log("What are you going to do with all that money?" + "\n" + "Will you be " + spend + "?"  );
+console.log("If you're like me then you probably will be " + spend[3] + " !" );
+console.log("Yes, it's " + broke + " that I'm broke already!" + "\n" + "Maybe next time I will be" + spend[2]);
+
+// function
+// function getClockTime() logs actual time in HH:MM:SS AM/PM Format
+
+
+var clockTime = getClockTime()
+function getClockTime()
+
+{
+   var now    = new Date();
+   var hour   = now.getHours();
+   var minute = now.getMinutes();
+   var second = now.getSeconds();
+   var ap = "AM";
+   if (hour   > 11) { ap = "PM";             }
+   if (hour   > 12) { hour = hour - 12;      }
+   if (hour   == 0) { hour = 12;             }
+   if (hour   < 10) { hour   = "0" + hour;   }
+   if (minute < 10) { minute = "0" + minute; }
+   if (second < 10) { second = "0" + second; }
+   var timeString = hour +
+                    ':' +
+                    minute +
+                    ':' +
+                    second +
+                    " " +
+                    ap;
+   return timeString;
+} 
+
+// displays time through console log and addresses by global var name 
+// same variable name from initial prompt 
+
+console.log("The time is now " + clockTime);
+console.log("It's time to start" + spend[0] + " " + name );
 
