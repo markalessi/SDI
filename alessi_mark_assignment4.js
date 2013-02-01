@@ -32,7 +32,7 @@ var regHours
 
 
 // in my previous JavaScript class I used status property a bit
-// to me it's easier when you have several conditions 
+// to me it's easier when you have several conditions that take place
 
 
 status = (work < 40) ? regPay = work * rate: regPay = rate * 40   
@@ -42,6 +42,9 @@ status = (work < 40) ? regHours = work : regHours = 40
 
 var otRate = ot * rate * 1.5 
 var totalPay = regHours * rate + otRate
+
+var num = rate;
+var n=num.toFixed(2);
 
 // pay calc outputs 
 // I always imputed 50 hours at $10 and hour to make sure my functions work properly
