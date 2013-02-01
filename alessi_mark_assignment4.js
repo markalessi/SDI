@@ -43,9 +43,6 @@ status = (work < 40) ? regHours = work : regHours = 40
 var otRate = ot * rate * 1.5 
 var totalPay = regHours * rate + otRate
 
-var num = rate;
-var n=num.toFixed(2);
-
 // pay calc outputs 
 // I always imputed 50 hours at $10 and hour to make sure my functions work properly
 // Then I made sure it worked for > 40 hrs as well 
