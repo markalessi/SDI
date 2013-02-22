@@ -32,7 +32,7 @@ var citizen = {
 		}
 	}
 };	
-// var citizen 	
+// 	var citizen 	
  
 		console.log(citizen.characters.citizen1.name + " lives " + citizen.characters.citizen1.lives + " under the sea."); 
 		console.log(citizen.characters.citizen1.name +  "'s interests are " + citizen.characters.citizen1.interests + ".");
@@ -53,3 +53,14 @@ for (var hoursToWork = 3; hoursToWork > 1; hoursToWork--) {
 for (var hoursToWork = 1; hoursToWork > 0; hoursToWork--) {
 };
 console.log("It's time for " + citizen.characters.citizen1.name +  " to go to work!");
+
+//while-loop  ** I have to fix this loop it crash my computer several times**
+
+//var sbFriends = 1; //iterator, counter
+//while (sbFriends < 4){
+//console.log(citizen.characters.citizen1.name + " has "); //true output 
+//citizen.characters.citizen1.friends++;
+//if (sbFriends === 4){
+//console.log(citizen.characters.citizen1.name + "has no friends!"); // false output	
+//}
+//};
