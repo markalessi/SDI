@@ -5,9 +5,6 @@
 
 // JSON
 
-
-// object
-
 var citizen = { 
     "characters": {  
 	  "citizen1": { 
@@ -35,11 +32,7 @@ var citizen = {
 		}
 	}
 };	
-var citizen 	
-// function with string concatonation
-// function bio 
-
-//bio: function (){
+// var citizen 	
  
 		console.log(citizen.characters.citizen1.name + " lives " + citizen.characters.citizen1.lives + " under the sea."); 
 		console.log(citizen.characters.citizen1.name +  "'s interests are " + citizen.characters.citizen1.interests + ".");
@@ -47,13 +40,6 @@ var citizen
 
 var key = "name";
 
-
-// calls function bio
-
-//citizen.characters.citizen1.bio();
-
-//  for (var key in citizen) {
-//	console.log( key + ": " + citizen[key]);
 
 // for-loop 
 var hoursToWork
