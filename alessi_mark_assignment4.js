@@ -22,25 +22,25 @@ function decimalSpots(numberUsed) {
 decimalSpots(75);  // called function // 75 dollars
 
 /* #2 - Given a string that is a list of things separated by a given string, as well as another string separator, return a string with the first separator changed to the second: “a,b,c” + “,” + “/” --> “a/b/c”.
-*/
++*/
 
-function splitString(stringToSplit, separator) {
-  var arrayOfStrings = stringToSplit.split(separator);
+function split(stringToSplit, separator) {
+  var stringArray = stringToSplit.split(separator);
 console.log("#2 - String Seperator"); 
 console.log("String: " + stringToSplit + " ");
 console.log("Separator:" + separator + " , and " + slash);
-console.log("This string array has " + arrayOfStrings.length + " elements: ");
+console.log("This string array has " + stringArray.length + " elements: ");
  
-  for (var i=0; i < arrayOfStrings.length; i++)
-    console.log(arrayOfStrings[i] + " , ");
-  for (var i=0; i < arrayOfStrings.length; i++)
-    console.log(arrayOfStrings[i] + " / ");
+  for (var i=0; i < stringArray.length; i++)
+    console.log(stringArray[i] + " , ");
+  for (var i=0; i < stringArray.length; i++)
+    console.log(stringArray[i] + " / ");
 }
  
-var monthString = "ABC";
+var string = "ABC";
  
 var space = " ";
 var comma = "";
 var slash = "/";
  
-splitString(monthString, comma);
+split(string, comma);
