@@ -122,3 +122,21 @@ console.log("Find the smallest value in an array than is greater than a given nu
 console.log("Sent the array [1,4,7,9,10,14,15] and the number 12 into the function, it should return 14 as the next highest number.") 
 smallestValue()
 
+/* 
+#6 - Title-case a string (split into words, then uppercase the first letter of each word)
+*/
+
+String.prototype.toProperCase = function() {
+  var text = this.split(" ");
+  var caps = [];
+  for (var i=0; i < text.length; i++) {
+      var letter = text[i].charAt(0).toUpperCase();
+      caps.push(letter + text[i].slice(1));
+  }
+  return caps.join(' ');
+};
+console.log("#6 - Title-case a string (split into words, then uppercase the first letter of each word).")
+console.log("string: scalable data infrastructure")
+console.log("scalable data infrastructure".toProperCase());
+
+
