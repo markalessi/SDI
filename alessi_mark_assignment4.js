@@ -64,10 +64,61 @@ function validate(){
  
 		if(atChar==-1 || dotChar==-1 || (atChar+2)>=dotChar){
 			console.log("Please recheck. E-mail address entered is not valid.");
-		}
-		else{
+		} else {
 			console.log("Thank you for submitting your email!");
 		}
-	}
 
-//	
+};
+
+/* # 4 Phone validation
+
+var validatePhone = function(num) {
+    if (isNaN(num.num2(0,2))) {
+        return false
+    } else {
+		if(isNaN(num.num2(4,6))) {
+			return false
+    			} else {
+    				if(isNaN(num.num2(8,11)))
+    					return false
+    			} else { 
+						return true
+	   		    } 		
+        }
+    }    
+};
+
+return { 
+validatePhone(813-555-1212)    
+
+};
+*/
+
+/*
+#5
+Find the smallest value in an array than is greater than a given number.
+You will need to send two items into the function. The first is an array of numbers
+and the second will be a number you’ll compare to numbers within the array. You
+will then return the number in the array that is the next highest number to the one
+you’re using in the comparison. So, if you send the array [1,4,7,9,10,14,15] and
+the number 12 into the function, it should return 14 as the next highest number.
+*/
+
+
+function smallestValue() {
+    function filterOut(element, index, array) {
+        return (element >= 12);
+    }
+    var filtered = [1, 4, 7, 9, 10, 14, 15].filter(filterOut);
+    filterOut();
+    filtered.sort(function (num1, num2) {
+        return num1 - num2;
+    });
+        
+    return console.log(filtered.shift());
+}
+
+console.log("Find the smallest value in an array than is greater than a given number.")
+console.log("Sent the array [1,4,7,9,10,14,15] and the number 12 into the function, it should return 14 as the next highest number.") 
+smallestValue()
+
