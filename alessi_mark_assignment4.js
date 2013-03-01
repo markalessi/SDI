@@ -70,29 +70,19 @@ function validate(){
 
 };
 
-/* # 4 Phone validation
-
-var validatePhone = function(num) {
-    if (isNaN(num.num2(0,2))) {
-        return false
-    } else {
-		if(isNaN(num.num2(4,6))) {
-			return false
-    			} else {
-    				if(isNaN(num.num2(8,11)))
-    					return false
-    			} else { 
-						return true
-	   		    } 		
-        }
-    }    
-};
-
-return { 
-validatePhone(813-555-1212)    
-
-};
+/* #4 - Find the number of hours or days difference between two dates.
+Used today's date and New Years 2013
 */
+
+console.log("#4 - Find the number of hours or days difference between two dates. I used today's date and New Years 2013")
+function calcDays(date) {
+    var newYears = date;
+    today = new Date(2013, 02, 28);
+    var day = 1000 * 60 * 60 * 24;
+    console.log("It has been " + Math.ceil((today.getTime() - newYears.getTime()) / (day)) + " days since " + date)
+};
+
+calcDays(new Date(2013, 01, 01));
 
 /*
 #5
@@ -103,7 +93,6 @@ will then return the number in the array that is the next highest number to the 
 you’re using in the comparison. So, if you send the array [1,4,7,9,10,14,15] and
 the number 12 into the function, it should return 14 as the next highest number.
 */
-
 
 function smallestValue() {
     function filterOut(element, index, array) {
@@ -118,7 +107,7 @@ function smallestValue() {
     return console.log(filtered.shift());
 }
 
-console.log("Find the smallest value in an array than is greater than a given number.")
+console.log("#5 - Find the smallest value in an array than is greater than a given number.")
 console.log("Sent the array [1,4,7,9,10,14,15] and the number 12 into the function, it should return 14 as the next highest number.") 
 smallestValue()
 
@@ -139,4 +128,25 @@ console.log("#6 - Title-case a string (split into words, then uppercase the firs
 console.log("string: scalable data infrastructure")
 console.log("scalable data infrastructure".toProperCase());
 
+// # 7 Phone validation
 
+var validatePhone = function(string) {
+    if (isNaN(string.subString(0,2))) {
+        return false
+    } else {
+        if(isNaN(string.subString(4,6))) {
+            return false
+                } else {
+                    if(isNaN(string.subString(8,11)))
+                        return false
+                } else { 
+                        return true
+                }       
+        }
+    }    
+};
+
+return { 
+validatePhone(813-555-1212)    
+
+};
