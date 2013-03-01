@@ -128,7 +128,11 @@ console.log("#6 - Title-case a string (split into words, then uppercase the firs
 console.log("string: scalable data infrastructure")
 console.log("scalable data infrastructure".toProperCase());
 
-// # 7 Phone validation
+/* completed the required six but was working on extra
+couldn't get this one to work... working on it for a long while
+sneaky suspecion it's a silly little erorr 
+
+# 7 Phone validation
 
 var validatePhone = function(string) {
     if (isNaN(string.subString(0,2))) {
@@ -150,3 +154,4 @@ return {
 validatePhone(813-555-1212)    
 
 };
+*/
